@@ -641,7 +641,7 @@
             <div class="footer-container">
                 <div><h3>Saniya's Pen</h3><p>handwritten notes</p></div>
                 <div><h4>📍 address</h4><p><i class="fas fa-map-pin"></i> Nai Sadak, Varanasi</p></div>
-                <div class="whatsapp-admin"><h4>📲 admin</h4><a href="https://wa.me/917267934700" target="_blank"><i class="fab fa-whatsapp"></i> +91 72679 34700</a></div>
+                <div class="whatsapp-admin"><h4>📲 admin</h4><a href="https://wa.me/918840087488" target="_blank"><i class="fab fa-whatsapp"></i> +91 72679 34700</a></div>
             </div>
             <hr style="border-color:#5f5546;"><p style="text-align:center;">© stepwise handwritten notes · Varanasi</p>
         </div>
@@ -765,7 +765,7 @@
         function sendToAdminWhatsApp(b){
             let serviceList = b.services.map(s=>`${s.name} ×${s.quantity||1} = ₹${s.price*(s.quantity||1)}`).join('%0a');
             let msg = `📌 *Saniya's Pen booking*%0a🆔 ${b.id}%0a👤 ${b.name} (${b.phone})%0a📍 ${b.address}, ${b.area}%0a📅 ${b.date} ${b.time}%0a📝 services:%0a${serviceList}%0a⚡ urgent: ${b.urgent?'yes (+200)':'no'}%0a💰 TOTAL: ₹${b.finalTotal}%0a🏠 Nai Sadak, Varanasi`;
-            window.open(`https://wa.me/917267934700?text=${msg}`, '_blank');
+            window.open(`https://wa.me/918840087488?text=${msg}`, '_blank');
         }
 
         function displayFinal(b){
